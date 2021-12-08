@@ -5,8 +5,8 @@ const cors = require("cors")
 
 const app=express();
 
-const host="localhost";
-const port=2021;
+const host = '0.0.0.0';
+const port =process.env.PORT || 2001;
 
 app.use(cors());
 app.options("*",cors())
